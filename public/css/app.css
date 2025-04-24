@@ -1,0 +1,95 @@
+body{
+     margin: 0;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: -webkit-fill-available;
+    background-color: rgb(13, 25, 58);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.253);
+    border-radius: 0 50px 50px 0;
+}
+
+.divider{
+    height: 1px;
+    width: 100%;
+    background: rgb(228, 228, 228);
+}
+
+.main-content{
+    margin-left: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    overflow-x: hidden;
+}
+
+.site-title{
+    display: flex; 
+    gap: 20px;
+    align-items: center;
+    color: white;
+}
+
+.site-title h4{
+    font-size: 18px;
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    width: 95%;
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.menu li{
+    margin-top: 5px;
+    font-size: 14px;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 7px;
+    color: white;
+}
+
+.menu li:hover{
+    background: rgb(226, 226, 226);
+}
+
+.menu li:hover button,
+.menu li:hover i,
+.menu li:hover a{
+    color: rgb(37, 37, 37);
+}
+
+.logout{
+    width: 100%;
+}
+
+.logout-btn{
+    background: transparent;
+    border: none;
+    margin-top: 5px;
+    font-size: 14px;
+    margin-left: -3px;
+    color: white;
+}
